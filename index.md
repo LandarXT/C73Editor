@@ -1,4 +1,4 @@
-## C73 Editor by Landar
+
 C73 Editor is an Open source lightweight code editor by LandarXT for text file editing, with more formats planned soon
 
 ### Download
