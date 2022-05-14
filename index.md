@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+## C73 Editor by Landar
+C73 Editor is an Open source lightweight code editor by LandarXT for text file editing, with more formats planned soon
 
-You can use the [editor on GitHub](https://github.com/LandarXT/C73Editor/edit/pages/index.md) to maintain and preview the content for your website in Markdown files.
+### Download
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+[1.0.0 - Current stable build](https://github.com/LandarXT/C73Editor/releases/download/1.0/C73.zip)
 
-### Markdown
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Updates planned
+Updates are already planned to add new file format support, a new UI and many other useful features.
 
-```markdown
-Syntax highlighted code block
+You can check our current progress on [our Github](https://github.com/LandarXT/C73Editor/)
 
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/LandarXT/C73Editor/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
