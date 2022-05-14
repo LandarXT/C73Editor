@@ -117,4 +117,39 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAGDSURBVHhe7ZrLTQNBEEQ3BEIhFEIgBDIgBEIgBEIgBEIgBEKAqgMSh7K9Mz3T04PqSe9ir9td
+        5Y+02j2MMcbM4x6+LvIRLoXhv+D3QpeVUCE85Q7pVAn/ayrVwtM0WsK/w7fBfkD1Xim0fvIz/pweoHqv
+        6fR87f9NAbfCM+ilx0eTXsCZ8OTacyNJLeBseHLr+VGkFdASnpw5ZgQpBbSGJ2ePizK9gJ7wpOXYCFML
+        6A1PWo/vZVoBkfCk5zU9TCvgWvhPqM7F/6pet1UBamhUFwBHs1UBXHY02xTA09Y7OJrUAnrP55/hjPAk
+        tYAZv+EoLgCqXcOooS4AVsMFQLVrGDXUBcBquACodg2jhroAWA0XANWuYdRQFwCr4QKg2jWMGuoCYDVc
+        AFS7hlFDXQCshguAatcwaqgLgNVwAVDtGkYNdQGwGi4Aql3DqKG8NKbuBVgpd1K7hlFDdzKMGrqTYXgb
+        jBq8g7y9J8wTVMN38AUOgSXwj0Zd868qdzbGGHOZ4/gBW+gXvuScUd4AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>C73 Editor 
+
+ A lightweight open-source notepad by LandarXT
+
+Version 1.1.0-dev1 
+THIS IS NOT A STABLE VERSION AND SHOULD NOT BE USED FOR SERIOUS PURPOSES
+
+
+This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see https://www.gnu.org/licenses/.</value>
+  </data>
 </root>
