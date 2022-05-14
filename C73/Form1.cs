@@ -46,9 +46,7 @@ namespace C73
         {
             SaveFileDialog saveDialog = new SaveFileDialog();
             saveDialog.Title = "Save";
-            saveDialog.Filter = "Text Files (*.txt)|*.txt" + "|" +
-
-                                "All Files (*.*)|*.*";
+            saveDialog.Filter = "Text files (*.txt)|*.txt|Rich text files (*.rtf)|*.rtf|All files (*.*)|*.*";
             if (saveDialog.ShowDialog() == DialogResult.OK)
             {
                 string filetosave = saveDialog.FileName;
@@ -63,7 +61,9 @@ namespace C73
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DialogResult result = openFileDialog1.ShowDialog(); 
+            openFileDialog1.Filter = "Text files (*.txt)|*.txt|Rich text files (*.rtf)|*.rtf|All files (*.*)|*.*";
+            DialogResult result = openFileDialog1.ShowDialog();
+            
             if (result == DialogResult.OK) 
             {
                 string file = openFileDialog1.FileName;
@@ -90,6 +90,11 @@ namespace C73
 
         }
 
+        private void button4_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            about.ShowDialog();
+        }
     }
 }
 
