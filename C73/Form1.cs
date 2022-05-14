@@ -39,7 +39,7 @@ namespace C73
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            richTextBox1.Font = fontDialog1.Font;
+
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -52,9 +52,9 @@ namespace C73
             if (saveDialog.ShowDialog() == DialogResult.OK)
             {
                 string filetosave = saveDialog.FileName;
-                System.IO.StreamWriter writer = new System.IO.StreamWriter(filetosave); 
-                writer.Write(richTextBox1.Text.ToString()); 
-                writer.Close(); 
+                System.IO.StreamWriter writer = new System.IO.StreamWriter(filetosave);
+                writer.Write(richTextBox1.Text.ToString());
+                writer.Close();
                 writer.Dispose();
             }
 
@@ -63,8 +63,8 @@ namespace C73
 
         private void button2_Click(object sender, EventArgs e)
         {
-            DialogResult result = openFileDialog1.ShowDialog(); 
-            if (result == DialogResult.OK) 
+            DialogResult result = openFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
             {
                 string file = openFileDialog1.FileName;
                 try
@@ -81,15 +81,63 @@ namespace C73
         private void button3_Click(object sender, EventArgs e)
         {
             fontDialog1.ShowDialog();
-            richTextBox1.Font = fontDialog1.Font;
+
             if (fontDialog1.ShowDialog() != DialogResult.Cancel)
             {
                 richTextBox1.Font = fontDialog1.Font;
             }
 
 
+
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            About about = new About();
+            about.ShowDialog();
+        }
+
+        private void pbSave_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.Title = "Save";
+            saveDialog.Filter = "Text Files (*.txt)|*.txt" + "|" +
+
+                                "All Files (*.*)|*.*";
+            if (saveDialog.ShowDialog() == DialogResult.OK)
+            {
+                string filetosave = saveDialog.FileName;
+                System.IO.StreamWriter writer = new System.IO.StreamWriter(filetosave);
+                writer.Write(richTextBox1.Text.ToString());
+                writer.Close();
+                writer.Dispose();
+            }
+        }
+
+        private void pbOpen_Click(object sender, EventArgs e)
+        {
+            DialogResult result = openFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                string file = openFileDialog1.FileName;
+                try
+                {
+                    string text = File.ReadAllText(file);
+                    richTextBox1.Text = text;
+                }
+                catch (IOException)
+                {
+                }
+            }
         }
 
     }
 }
+
 

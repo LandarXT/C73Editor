@@ -43,85 +43,117 @@ namespace C73
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
-            this.button2 = new System.Windows.Forms.Button();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.button3 = new System.Windows.Forms.Button();
             this.fontDialog1 = new System.Windows.Forms.FontDialog();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pbAbout = new System.Windows.Forms.PictureBox();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.pbSave = new System.Windows.Forms.PictureBox();
+            this.pbOpen = new System.Windows.Forms.PictureBox();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbAbout)).BeginInit();
+            this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbSave)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOpen)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.Location = new System.Drawing.Point(720, 7);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(68, 20);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "Save";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // richTextBox1
-            // 
-            this.richTextBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.richTextBox1.Location = new System.Drawing.Point(4, 33);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.Size = new System.Drawing.Size(781, 411);
-            this.richTextBox1.TabIndex = 1;
-            this.richTextBox1.Text = "";
-            // 
-            // button2
-            // 
-            this.button2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button2.Location = new System.Drawing.Point(646, 7);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(68, 20);
-            this.button2.TabIndex = 2;
-            this.button2.Text = "Open";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // openFileDialog1
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // button3
+            // panel1
             // 
-            this.button3.Location = new System.Drawing.Point(565, 7);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(75, 20);
-            this.button3.TabIndex = 3;
-            this.button3.Text = "Font";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.Controls.Add(this.pbOpen);
+            this.panel1.Controls.Add(this.pbSave);
+            this.panel1.Controls.Add(this.pbAbout);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(65, 450);
+            this.panel1.TabIndex = 3;
+            // 
+            // pbAbout
+            // 
+            this.pbAbout.Image = ((System.Drawing.Image)(resources.GetObject("pbAbout.Image")));
+            this.pbAbout.Location = new System.Drawing.Point(3, 383);
+            this.pbAbout.Name = "pbAbout";
+            this.pbAbout.Size = new System.Drawing.Size(62, 64);
+            this.pbAbout.TabIndex = 1;
+            this.pbAbout.TabStop = false;
+            this.pbAbout.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.richTextBox1);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel2.Location = new System.Drawing.Point(65, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(735, 450);
+            this.panel2.TabIndex = 4;
+            // 
+            // richTextBox1
+            // 
+            this.richTextBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.richTextBox1.Location = new System.Drawing.Point(0, 0);
+            this.richTextBox1.Name = "richTextBox1";
+            this.richTextBox1.Size = new System.Drawing.Size(735, 450);
+            this.richTextBox1.TabIndex = 0;
+            this.richTextBox1.Text = "";
+            // 
+            // pbSave
+            // 
+            this.pbSave.Image = ((System.Drawing.Image)(resources.GetObject("pbSave.Image")));
+            this.pbSave.Location = new System.Drawing.Point(3, 313);
+            this.pbSave.Name = "pbSave";
+            this.pbSave.Size = new System.Drawing.Size(62, 64);
+            this.pbSave.TabIndex = 2;
+            this.pbSave.TabStop = false;
+            this.pbSave.Click += new System.EventHandler(this.pbSave_Click);
+            // 
+            // pbOpen
+            // 
+            this.pbOpen.Image = ((System.Drawing.Image)(resources.GetObject("pbOpen.Image")));
+            this.pbOpen.Location = new System.Drawing.Point(3, 243);
+            this.pbOpen.Name = "pbOpen";
+            this.pbOpen.Size = new System.Drawing.Size(62, 64);
+            this.pbOpen.TabIndex = 3;
+            this.pbOpen.TabStop = false;
+            this.pbOpen.Click += new System.EventHandler(this.pbOpen_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.richTextBox1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.panel2);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "C73 Editor";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbAbout)).EndInit();
+            this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbSave)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbOpen)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.RichTextBox richTextBox1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.Button button3;
         private System.Windows.Forms.FontDialog fontDialog1;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pbAbout;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.PictureBox pbSave;
+        private System.Windows.Forms.PictureBox pbOpen;
     }
 }
 
