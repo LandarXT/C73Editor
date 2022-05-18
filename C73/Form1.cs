@@ -80,9 +80,9 @@ namespace C73
 
         private void button3_Click(object sender, EventArgs e)
         {
-            fontDialog1.ShowDialog();
-            richTextBox1.Font = fontDialog1.Font;
-            if (fontDialog1.ShowDialog() != DialogResult.Cancel)
+            DialogResult FontResult = fontDialog1.ShowDialog();
+
+            if (FontResult != DialogResult.Cancel)
             {
                 richTextBox1.Font = fontDialog1.Font;
             }
