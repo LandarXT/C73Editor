@@ -1,3 +1,5 @@
+Note: This repo is now archived and read-only because I do not plan to release any more updates
+
 # C73Editor
 ![GitHub](https://img.shields.io/github/license/LandarXT/C73Editor) ![GitHub release (latest by date)](https://img.shields.io/github/v/release/LandarXT/c73editor)
 
